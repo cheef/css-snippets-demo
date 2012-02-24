@@ -1,7 +1,7 @@
 source :rubygems
 
 gem 'rails', '3.2.1'
-gem 'sqlite3'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -14,7 +14,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'compass-rails'
 gem 'compass_twitter_bootstrap'
-gem 'css-snippets', :path => '../css-snippets'
+#gem 'css-snippets', :path => '../css-snippets'
+gem 'css-snippets'
 gem 'high_voltage'
 gem 'faker'
 
