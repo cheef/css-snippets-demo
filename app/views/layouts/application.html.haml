@@ -1,20 +1,13 @@
 !!! 5
 %html
   %head
-    %title CssSnippetsDemo
+    %title css-snippets
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
     .l-main
       .b-main
-        %header.b-header
-          %h1
-            = link_to 'css-snippets', root_path, :class => 'b-logo'
-            %span.small
-              by
-              = link_to 'cheef', 'https://github.com/cheef'
-
+        = render 'layouts/header'
         %article.b-article= yield
-
-        %footer.b-footer
+        = render 'layouts/footer'

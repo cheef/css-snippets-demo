@@ -1,0 +1,8 @@
+%header.b-header
+  %h1
+    = link_to 'css-snippets', root_path, :class => 'b-logo'
+    %span.small
+      by
+      = link_to 'Ivan Garmatenko', 'https://github.com/cheef'
+    .b-latest-version
+      Latest version:&nbsp;#{link_to CssSnippets::VERSION, 'https://rubygems.org/gems/css-snippets'}

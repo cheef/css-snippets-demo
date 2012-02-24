@@ -1,4 +1,19 @@
-.l-justified-container.l-demo-snippet
+%section.b-what-is-this
+  .page-header
+    %h1 What is this?
+  %p
+    Gem contains stylesheets and rails helpers which provides simple way to add useful css snippets to your site,
+    see examples for details.
+
+%section.b-installation
+  .page-header
+    %h1 Installation
+
+  In <strong>Rails 3</strong>, add this to your Gemfile and run the bundle command:
+  = code 'Gemfile' do
+    gem "css-snippets"
+
+%section.l-justified-container.l-demo-snippet
   .page-header
     %h1 Justified items
 
@@ -10,7 +25,7 @@
       = Faker::Lorem.sentence
     = item 'Right'
 
-.l-two-column-layout.l-demo-snippet
+%section.l-two-column-layout.l-demo-snippet
   .page-header
     %h1 Right menu liquid layout
 
