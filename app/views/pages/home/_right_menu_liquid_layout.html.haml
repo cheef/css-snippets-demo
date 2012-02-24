@@ -1,0 +1,31 @@
+%section.l-demo-snippet
+  .page-header
+    %h1 Right menu liquid layout
+
+  = render_css_snippet :right_menu_liquid_layout do
+    = left_column do
+      %p Left column text
+      %p= Faker::Lorem.sentences(10).join(' ')
+
+    = right_column do
+      %p Right column text
+      %p= Faker::Lorem.sentences(3).join(' ')
+
+  .b-code-examples
+    = code 'application.scss', :class => 'small-code-block' do
+      :coderay
+        #!css
+        .my-layout-wrapper {
+          @include right-menu-liquid-layout;
+        }
+
+    = code 'application.html.haml', :class => 'average-code-block'  do
+      :coderay
+        #!ruby
+        = render_css_snippet :right_menu_liquid_layout, :class => 'my-layout-wrapper' do
+          = left_column do
+            %p Left column text
+            %p= Faker::Lorem.sentences(10).join(' ')
+          = right_column do
+            %p Right column text
+            %p= Faker::Lorem.sentences(3).join(' ')

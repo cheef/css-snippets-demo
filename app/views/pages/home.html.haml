@@ -11,29 +11,9 @@
 
   In <strong>Rails 3</strong>, add this to your Gemfile and run the bundle command:
   = code 'Gemfile' do
-    gem "css-snippets"
+    :coderay
+      #!ruby
+      gem "css-snippets"
 
-%section.l-justified-container.l-demo-snippet
-  .page-header
-    %h1 Justified items
-
-  = render_css_snippet :justified_items do
-    = item 'Left'
-    = item Faker::Lorem.sentence
-    = item 'Center'
-    = item do
-      = Faker::Lorem.sentence
-    = item 'Right'
-
-%section.l-two-column-layout.l-demo-snippet
-  .page-header
-    %h1 Right menu liquid layout
-
-  = render_css_snippet :right_menu_liquid_layout do
-    = left_column do
-      %p Left column text
-      %p= Faker::Lorem.sentences(10).join(' ')
-
-    = right_column do
-      %p Right column text
-      %p= Faker::Lorem.sentences(3).join(' ')
+= render 'pages/home/justified_items'
+= render 'pages/home/right_menu_liquid_layout'

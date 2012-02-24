@@ -59,6 +59,9 @@ GEM
       i18n (~> 0.4)
     fssm (0.2.8.1)
     haml (3.1.4)
+    haml-coderay (0.1.2)
+      coderay
+      haml
     haml-rails (0.3.4)
       actionpack (~> 3.0)
       activesupport (~> 3.0)
@@ -141,6 +144,7 @@ DEPENDENCIES
   compass_twitter_bootstrap
   css-snippets (~> 0.0.3)
   faker
+  haml-coderay
   haml-rails
   high_voltage (~> 1.1.1)
   jquery-rails

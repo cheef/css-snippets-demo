@@ -1,12 +1,9 @@
 module CodeHelper
 
-  def code title = '', &block
-    <<-HTML.html_safe
-      <div class="l-code-block">
-        #{code_title(title)}
-        #{CodeRay.scan(capture(&block).strip, :ruby).div(:css => :class)}
-      </div>
-    HTML
+  def code title = '', options = {}, &block
+    content_tag :div, :class => [ "l-code-block", options[:class] ].compact.join(' ') do
+      code_title(title).to_s.html_safe + capture(&block).to_s.html_safe
+    end
   end
 
   private
