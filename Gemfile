@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'rails', '3.2.1'
 gem 'pg'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -15,10 +16,6 @@ gem 'haml-rails'
 gem 'compass-rails'
 gem 'compass_twitter_bootstrap'
 #gem 'css-snippets', :path => '../css-snippets'
-gem 'css-snippets'
-gem 'high_voltage'
+gem 'css-snippets', '~> 0.0.2'
+gem 'high_voltage', '~> 1.1.1'
 gem 'faker'
-
-group :development do
-  gem 'thin'
-end
