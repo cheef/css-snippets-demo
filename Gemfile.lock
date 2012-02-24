@@ -47,7 +47,7 @@ GEM
       compass (~> 0.12.rc.0)
     compass_twitter_bootstrap (2.0.1.2)
       compass
-    css-snippets (0.0.2)
+    css-snippets (0.0.3)
       activesupport (~> 3.1)
       compass
     daemons (1.1.8)
@@ -139,7 +139,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
   compass_twitter_bootstrap
-  css-snippets (~> 0.0.2)
+  css-snippets (~> 0.0.3)
   faker
   haml-rails
   high_voltage (~> 1.1.1)
