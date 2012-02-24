@@ -1,0 +1,25 @@
+@import demo/widgets
+
+body
+  background-color: $main-color
+
+.l-main
+  @extend .container
+  padding-top: 3em
+  padding-bottom: 3em
+
+  .b-header
+    +clearfix
+
+    h1, .b-logo
+      line-height: 60px
+
+    .b-logo
+      +disable-link-styles($text-color)
+      font-size: 60px
+
+  .b-article
+    margin: 3em 0
+
+.l-demo-snippet
+  margin: 2em 0
