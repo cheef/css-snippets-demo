@@ -11,17 +11,17 @@
     = item 'Right'
 
   .b-code-examples
-    = code 'application.scss', :class => 'small-code-block' do
+    = code 'application.scss', class: 'small-code-block' do
       :coderay
         #!css
         .my-list-wrapper {
           @include justify-items;
         }
 
-    = code 'application.html.haml', :class => 'average-code-block'  do
+    = code 'application.html.haml', class: 'average-code-block' do
       :coderay
         #!ruby
-        = render_css_snippet :justified_items, :class => 'my-list-wrapper' do
+        = render_css_snippet :justified_items, class: 'my-list-wrapper' do
           = item 'Left'
           = item Faker::Lorem.sentence
           = item 'Center'

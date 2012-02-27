@@ -12,17 +12,17 @@
       %p= Faker::Lorem.sentences(3).join(' ')
 
   .b-code-examples
-    = code 'application.scss', :class => 'small-code-block' do
+    = code 'application.scss', class: 'small-code-block' do
       :coderay
         #!css
         .my-layout-wrapper {
           @include right-menu-liquid-layout;
         }
 
-    = code 'application.html.haml', :class => 'average-code-block'  do
+    = code 'application.html.haml', class: 'average-code-block'  do
       :coderay
         #!ruby
-        = render_css_snippet :right_menu_liquid_layout, :class => 'my-layout-wrapper' do
+        = render_css_snippet :right_menu_liquid_layout, class: 'my-layout-wrapper' do
           = left_column do
             %p Left column text
             %p= Faker::Lorem.sentences(10).join(' ')

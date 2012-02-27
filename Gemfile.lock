@@ -1,3 +1,10 @@
+PATH
+  remote: ../css-snippets
+  specs:
+    css-snippets (0.0.3)
+      activesupport (~> 3.1)
+      compass
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -46,9 +53,6 @@ GEM
     compass-rails (1.0.0.rc.3)
       compass (~> 0.12.rc.0)
     compass_twitter_bootstrap (2.0.1.2)
-      compass
-    css-snippets (0.0.3)
-      activesupport (~> 3.1)
       compass
     daemons (1.1.8)
     erubis (2.7.0)
@@ -142,7 +146,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
   compass_twitter_bootstrap
-  css-snippets (~> 0.0.3)
+  css-snippets!
   faker
   haml-coderay
   haml-rails
